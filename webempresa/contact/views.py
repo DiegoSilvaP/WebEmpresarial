@@ -24,7 +24,6 @@ def contact(request):
             # Pero, es una mala práctica pasar cadenas de texto en crudo, por que si la URL cambia, tendremos que cambiarla aquí también
             # return redirect('/contact/?ok') 
             # De esta manera, es como si tuviéramos un templatetag urls
-
             # Enviamos el correo y redireccionamos
             email = EmailMessage(
                 "LA CAFFETTIERA: Nuevo mensaje de contacto",

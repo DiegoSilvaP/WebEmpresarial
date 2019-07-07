@@ -9,8 +9,9 @@ https://docs.djangoproject.com/en/2.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.0/ref/settings/
 """
-
+import django_heroku
 import os
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -153,3 +154,9 @@ EMAIL_HOST = 'smtp.mailtrap.io'
 EMAIL_HOST_USER = '8c4b5435fdd6d4'
 EMAIL_HOST_PASSWORD = 'c2a4b427f77aca'
 EMAIL_PORT = '2525'
+
+# Custom header
+ADMIN_SITE_HEADER = "LA CAFFETTIERA ADMINISTRACION"
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())

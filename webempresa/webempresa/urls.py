@@ -33,6 +33,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 
+admin.site.site_header = settings.ADMIN_SITE_HEADER
 
 # Si Debug es true
 if settings.DEBUG:
